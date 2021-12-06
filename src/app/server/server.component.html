@@ -1,1 +1,5 @@
-<h2>{{info}}</h2>
+<h2>The server id is {{id}} and name is {{getInfo()}}</h2>
+<p>Is new Server Allowed : {{!isDisabled}}</p>
+<button class="btn btn-primary" [disabled]="isDisabled" (click)="onServerAdd()">
+  Add Server
+</button>
